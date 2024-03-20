@@ -1,0 +1,33 @@
+name: job_app
+description: A new Flutter project.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+# ----- PACKEGES ----- #
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+  flutter_native_splash: ^2.3.7
+  smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
+
+  # ----- ICON ----- #
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
