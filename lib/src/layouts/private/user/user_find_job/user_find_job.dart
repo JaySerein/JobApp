@@ -9,7 +9,6 @@ import 'package:job_app/src/components/widgets/job_card/job_card.dart';
 import 'package:job_app/src/components/widgets/notification/notificatio.dart';
 import 'package:job_app/src/components/widgets/texts/section_heading.dart';
 import 'package:job_app/src/layouts/private/user/job_detail/job_detail.dart';
-import 'package:job_app/src/layouts/private/user/job_detail/job_invite_detail.dart';
 import 'package:job_app/src/utils/helpers/helper_function.dart';
 
 class JobFind extends StatelessWidget {

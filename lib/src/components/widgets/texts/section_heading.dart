@@ -44,13 +44,14 @@ class JSectionHeadingWithIcon extends StatelessWidget {
     this.textColor,
     this.showActionButton = false,
     required this.title,
-    this.buttonTitle = 'Xem thêm`',
     this.onPressed,
+    this.icon = Iconsax.filter_edit,
   });
 
   final Color? textColor;
   final bool showActionButton;
-  final String title, buttonTitle;
+  final String title;
+  final IconData icon;
   final void Function()? onPressed;
 
   @override
@@ -71,7 +72,7 @@ class JSectionHeadingWithIcon extends StatelessWidget {
           IconButton(
               onPressed: onPressed,
               icon: Icon(
-                Iconsax.filter_edit,
+                icon,
                 size: JSizes.iconMd,
                 color: textColor,
               ))

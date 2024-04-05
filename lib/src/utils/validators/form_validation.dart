@@ -1,4 +1,11 @@
 class JValidator {
+  static String? validateText(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Thông tin không được bỏ trống.';
+    }
+    return null;
+  }
+
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
       return 'Yêu cầu điền email.';
@@ -44,14 +51,14 @@ class JValidator {
 
   static String? validatePhoneNumber(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Phone number is required.';
+      return 'Yêu cầu nhập số điện thoại.';
     }
 
     // Regular expression for phone number validation (assuming a 10-digit US phone number format)
     final phoneRegExp = RegExp(r'^\d{10}$');
 
     if (!phoneRegExp.hasMatch(value)) {
-      return 'Invalid phone number format (10 digits required).';
+      return 'Số điện thoại không hợp lệ.';
     }
 
     return null;

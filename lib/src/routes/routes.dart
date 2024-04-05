@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:job_app/src/layouts/private/company/navigation_company.dart';
 import 'package:job_app/src/layouts/private/user/navigation.dart';

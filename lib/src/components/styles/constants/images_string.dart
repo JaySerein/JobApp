@@ -12,6 +12,8 @@ class JImages {
   static const String emailSend = "assets/images/gif/verify-email.png";
   static const String success = "assets/images/gif/success.png";
 
+  // Loading
+  static const String loading = "assets/images/gif/loader-animation.json";
   //Category
   static const String categoryIT =
       'assets/images/categories/information-technology.png';

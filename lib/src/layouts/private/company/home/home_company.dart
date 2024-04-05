@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:job_app/src/components/styles/constants/images_string.dart';
 import 'package:job_app/src/components/styles/constants/sizes.dart';
 import 'package:job_app/src/components/widgets/custom_shape/header_container.dart';

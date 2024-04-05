@@ -20,12 +20,11 @@ class JTexts {
       "Bạn đã sẵn sàng cho một công việc mới - môi trường mới. Lên đường thôi!";
 
   // -- Authentication Forms
-  static const String firstName = "Họ";
-  static const String lastName = "Tên";
   static const String email = "E-Mail";
   static const String password = "Mật khẩu";
+  static const String repassword = "Xác nhận mật khẩu";
   static const String newPassword = "Mật khẩu mới";
-  static const String username = "Tên đăng nhập";
+  static const String fullname = "Họ & tên";
   static const String phoneNo = "Số điện thoại";
   static const String rememberMe = "Ghi nhớ tài khoản";
   static const String forgetPassword = "Quên mật khẩu?";
@@ -33,8 +32,8 @@ class JTexts {
   static const String createAccount = "Tạo tài khoản mới";
   static const String orSignInWith = "or sign in with";
   static const String orSignUpWith = "or sign up with";
-  static const String iAgreeTo = "Tôi chấp nhận";
-  static const String privacyPolicy = "Chính sách bảo mật";
+  static const String iAgreeTo = "Chấp nhận";
+  static const String privacyPolicy = "Chính sách";
   static const String termsOfUse = "Điều khoản";
   static const String verificationCode = "verificationCode";
   static const String resendEmail = "Gửi lại Email";

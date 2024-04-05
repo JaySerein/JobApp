@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:job_app/src/components/styles/constants/colors.dart';
 import 'package:job_app/src/components/styles/constants/sizes.dart';
 import 'package:job_app/src/components/widgets/appbar/custom_appbar.dart';

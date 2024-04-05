@@ -7,6 +7,7 @@ import 'package:job_app/src/components/styles/constants/sizes.dart';
 import 'package:job_app/src/components/widgets/appbar/custom_appbar.dart';
 import 'package:job_app/src/components/widgets/custom_shape/header_container.dart';
 import 'package:job_app/src/components/widgets/texts/section_heading.dart';
+import 'package:job_app/src/layouts/private/user/profile/cv/user_cv.dart';
 import 'package:job_app/src/layouts/private/user/profile/info/info.dart';
 import 'package:job_app/src/layouts/private/user/profile/widgets/profile_menu_title.dart';
 import 'package:job_app/src/layouts/private/user/profile/widgets/profile_title.dart';
@@ -52,13 +53,13 @@ class ProfileScreen extends StatelessWidget {
                   JProfileMenuTitle(
                       icon: Iconsax.user_tag,
                       title: 'Thông tin cá nhân',
-                      subtitle: 'Thông tin sơ yếu lý lịch',
+                      subtitle: 'Thông tin tài khoản & cá nhân',
                       onTap: () => Get.to(() => const UserInfoScreen())),
                   JProfileMenuTitle(
                       icon: Iconsax.note_2,
-                      title: 'Thông tin hồ sơ',
+                      title: 'Hồ sơ ứng tuyển',
                       subtitle: 'Thông tin ứng tuyển công việc',
-                      onTap: () {}),
+                      onTap: () => Get.to(() => const UserCVScreen())),
                   JProfileMenuTitle(
                       icon: Iconsax.clock,
                       title: 'Lịch sự ứng tuyển',
