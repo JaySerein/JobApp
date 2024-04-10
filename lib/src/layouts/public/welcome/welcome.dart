@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:job_app/src/components/styles/constants/colors.dart';
 import 'package:job_app/src/components/styles/constants/images_string.dart';
 import 'package:job_app/src/components/styles/constants/strings_text.dart';
-import 'package:job_app/src/layouts/public/welcome/controllers/welcome_controller.dart';
+import 'package:job_app/src/controllers/welcome_controller.dart';
 import 'package:job_app/src/layouts/public/welcome/widgets/welcome_navigation.dart';
 import 'package:job_app/src/layouts/public/welcome/widgets/welcome_next_btn.dart';
 import 'package:job_app/src/layouts/public/welcome/widgets/welcome_page.dart';

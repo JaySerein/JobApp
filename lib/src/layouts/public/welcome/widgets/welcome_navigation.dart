@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:job_app/src/components/styles/constants/colors.dart';
 import 'package:job_app/src/components/styles/constants/sizes.dart';
-import 'package:job_app/src/layouts/public/welcome/controllers/welcome_controller.dart';
+import 'package:job_app/src/controllers/welcome_controller.dart';
 import 'package:job_app/src/utils/helpers/device_func.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

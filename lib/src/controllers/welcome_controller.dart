@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 // import 'package:job_app/src/routes/routes.dart';
 
 class WelcomeController extends GetxController {
@@ -17,6 +18,8 @@ class WelcomeController extends GetxController {
 
   void nextPage() {
     if (currentPageIndex.value == 2) {
+      final storage = GetStorage();
+      storage.write("isFirstTime", false);
       Get.toNamed('signin');
     } else {
       int page = currentPageIndex.value + 1;

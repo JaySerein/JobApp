@@ -6,10 +6,15 @@ import 'package:job_app/src/layouts/public/password_config/reset_password.dart';
 import 'package:job_app/src/layouts/public/sign_in/sign_in.dart';
 import 'package:job_app/src/layouts/public/sign_up/sign_up.dart';
 import 'package:job_app/src/layouts/public/sign_up/verify_email.dart';
+import 'package:job_app/src/layouts/public/welcome/welcome.dart';
 
 class JRoutes {
   static final routes = [
     //
+    GetPage(
+      name: '/welcome',
+      page: () => const WelcomeScreens(),
+    ),
     GetPage(
       name: '/signin',
       page: () => const SignInScreen(),
