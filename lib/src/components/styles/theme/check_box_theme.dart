@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:job_app/src/components/styles/constants/colors.dart';
-import 'package:job_app/src/components/styles/constants/sizes.dart';
 
 /// Custom Class for Light & Dark Text Themes
 class JCheckboxTheme {
@@ -8,8 +7,7 @@ class JCheckboxTheme {
 
   /// Customizable Light Text Theme
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
-    shape:
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(JSizes.xs)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
         return JColors.white;
@@ -28,8 +26,7 @@ class JCheckboxTheme {
 
   /// Customizable Dark Text Theme
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
-    shape:
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(JSizes.xs)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
         return JColors.white;

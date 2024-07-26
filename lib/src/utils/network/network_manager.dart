@@ -4,7 +4,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/services.dart';
 import 'package:job_app/src/components/widgets/loader/loaders.dart';
 
-class NetworkManager extends GetxController {
+class NetworkManager extends GetxService {
   static NetworkManager get instance => Get.find();
 
   final Connectivity _connectivity = Connectivity();

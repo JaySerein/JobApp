@@ -29,21 +29,25 @@ class JAppBar extends StatelessWidget implements PreferredSizeWidget {
       color: showBackground ? JColors.primary : null,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: JSizes.md),
-        child: AppBar(
-          automaticallyImplyLeading: false,
-          leading: showBackArrow
-              ? IconButton(
-                  onPressed: () => Get.back(),
-                  icon: const Icon(
-                    Iconsax.arrow_left,
-                    color: JColors.white,
-                  ))
-              : leadingIcon != null
+        child: Column(
+          children: [
+            AppBar(
+              automaticallyImplyLeading: false,
+              leading: showBackArrow
                   ? IconButton(
-                      onPressed: leadingOnPressed, icon: Icon(leadingIcon))
-                  : null,
-          title: title,
-          actions: action,
+                      onPressed: () => Get.back(),
+                      icon: const Icon(
+                        Iconsax.arrow_left,
+                        color: JColors.white,
+                      ))
+                  : leadingIcon != null
+                      ? IconButton(
+                          onPressed: leadingOnPressed, icon: Icon(leadingIcon))
+                      : null,
+              title: title,
+              actions: action,
+            ),
+          ],
         ),
       ),
     );

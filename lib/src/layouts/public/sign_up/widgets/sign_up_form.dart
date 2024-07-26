@@ -4,21 +4,24 @@ import 'package:iconsax/iconsax.dart';
 import 'package:job_app/src/components/styles/constants/colors.dart';
 import 'package:job_app/src/components/styles/constants/sizes.dart';
 import 'package:job_app/src/components/styles/constants/strings_text.dart';
+import 'package:job_app/src/components/widgets/text_form_field/text_field_no_action.dart';
 import 'package:job_app/src/controllers/signup_controller.dart';
 import 'package:job_app/src/utils/helpers/helper_function.dart';
 import 'package:job_app/src/utils/validators/form_validation.dart';
 
 class SignUpForm extends StatelessWidget {
-  const SignUpForm({
+  SignUpForm({
     super.key,
   });
+
+  final signupFormKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
     final dark = JHelperFunctions.isDarkMode(context);
     final controller = Get.put(SignupController());
     return Form(
-        key: controller.signupFormKey,
+        key: signupFormKey,
         child: Column(
           children: [
             // username
@@ -44,18 +47,26 @@ class SignUpForm extends StatelessWidget {
               decoration: const InputDecoration(
                   labelText: JTexts.email, prefixIcon: Icon(Iconsax.direct)),
             ),
-            //phone
             const SizedBox(
               height: JSizes.spaceBtwInputFields,
             ),
-            TextFormField(
-              controller: controller.phone,
-              validator: (value) => JValidator.validatePhoneNumber(value),
-              autovalidateMode: AutovalidateMode.onUserInteraction,
-              decoration: const InputDecoration(
-                  labelText: JTexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
+            GestureDetector(
+              onTap: () => controller.selectRole(context),
+              child: Stack(
+                children: [
+                  Obx(() {
+                    return TextFormField(
+                      readOnly: true,
+                      canRequestFocus: false,
+                      controller: controller.role.value,
+                      decoration: const InputDecoration(
+                          labelText: 'Vai trò', prefixIcon: Icon(Iconsax.star)),
+                    );
+                  }),
+                  const JDisableTextField()
+                ],
+              ),
             ),
-            //password
             const SizedBox(
               height: JSizes.spaceBtwInputFields,
             ),
@@ -150,7 +161,7 @@ class SignUpForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () => controller.signup(),
+                  onPressed: () => controller.signup(signupFormKey),
                   child: const Text(JTexts.createAccount)),
             )
           ],

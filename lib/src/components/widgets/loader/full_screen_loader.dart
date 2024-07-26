@@ -29,3 +29,29 @@ class JFullLoader {
     Navigator.of(Get.overlayContext!).pop();
   }
 }
+
+class JLoading {
+  static void openLoadingDialog(String text, String animation) {
+    showDialog(
+        context: Get.overlayContext!,
+        builder: (_) => PopScope(
+            canPop: false,
+            child: Container(
+              color: JHelperFunctions.isDarkMode(Get.context!)
+                  ? JColors.dark
+                  : JColors.white.withOpacity(0.01),
+              width: double.infinity,
+              height: double.infinity,
+              child: Column(
+                children: [
+                  const SizedBox(height: 250),
+                  JAnimationLoader(text: text, animation: animation)
+                ],
+              ),
+            )));
+  }
+
+  static closeLoading() {
+    Navigator.of(Get.overlayContext!).pop();
+  }
+}

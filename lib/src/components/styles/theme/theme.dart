@@ -13,8 +13,8 @@ class JAppTheme {
   JAppTheme._();
 
   static ThemeData lightTheme = ThemeData(
+    fontFamily: 'Overpass',
     useMaterial3: true,
-    fontFamily: 'Aleo',
     disabledColor: JColors.grey,
     brightness: Brightness.light,
     primaryColor: JColors.primary,
@@ -30,8 +30,8 @@ class JAppTheme {
   );
 
   static ThemeData darkTheme = ThemeData(
+    fontFamily: 'Overpass',
     useMaterial3: true,
-    fontFamily: 'Aleo',
     disabledColor: JColors.grey,
     brightness: Brightness.dark,
     primaryColor: JColors.primary,

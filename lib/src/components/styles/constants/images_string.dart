@@ -14,6 +14,7 @@ class JImages {
 
   // Loading
   static const String loading = "assets/images/gif/loader-animation.json";
+  static const String isloading = "assets/images/gif/loading.json";
   //Role
   static const String userRole = "assets/icons/user.png";
   static const String companyRole = "assets/icons/company.png";

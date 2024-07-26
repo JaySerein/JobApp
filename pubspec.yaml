@@ -11,9 +11,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
   http: ^1.2.1
-  intl: ^0.18.1
+  intl: ^0.19.0
   logger: ^2.0.1
   url_launcher: ^6.1.12
   dio: ^5.3.0
@@ -22,6 +24,9 @@ dependencies:
   flutter_native_splash: ^2.4.0
   smooth_page_indicator: ^1.1.0
   carousel_slider: ^4.2.1
+  multi_select_flutter: ^4.1.3
+  socket_io_client: ^2.0.3+1
+  google_fonts: ^6.2.1
 
   # ----- ICON ----- #
   iconsax: ^0.0.8
@@ -29,6 +34,8 @@ dependencies:
 
   get: ^4.6.5
   get_storage: ^2.1.1
+  image_picker: ^1.1.2
+  image: ^4.2.0
 
 dev_dependencies:
   flutter_test:
@@ -48,21 +55,22 @@ flutter:
     - assets/images/company-logo/
     - assets/images/categories/
     - assets/images/banners/
-fonts:
-  - family: Aleo
-    fonts:
-      - asset: assets/fonts/Aleo-Light.ttf
-        weight: 300
-      - asset: assets/fonts/Aleo-Regular.ttf
-        weight: 400
-      - asset: assets/fonts/Aleo-Italic.ttf
-        style: italic
-      - asset: assets/fonts/Aleo-Medium.ttf
-        weight: 500
-      - asset: assets/fonts/Aleo-MediumItalic.ttf
-        weight: 500
-        style: italic
-      - asset: assets/fonts/Aleo-SemiBold.ttf
-        weight: 600
-      - asset: assets/fonts/Aleo-Bold.ttf
-        weight: 800
+
+  # fonts:
+  #   - family: Overpass
+  #     fonts:
+  #       - asset: assets/fonts/Overpass-Light.ttf
+  #         weight: 300
+  #       - asset: assets/fonts/Overpass-Regular.ttf
+  #         weight: 400
+  #       - asset: assets/fonts/Overpass-Italic.ttf
+  #         style: italic
+  #       - asset: assets/fonts/Overpass-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Overpass-MediumItalic.ttf
+  #         weight: 500
+  #         style: italic
+  #       - asset: assets/fonts/Overpass-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Overpass-Bold.ttf
+  #         weight: 800

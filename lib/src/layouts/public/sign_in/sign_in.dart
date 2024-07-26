@@ -24,7 +24,7 @@ class SignInScreen extends StatelessWidget {
                 height: JSizes.sm,
               ),
               //Form
-              const SignInForm()
+              SignInForm()
             ],
           ),
         ),

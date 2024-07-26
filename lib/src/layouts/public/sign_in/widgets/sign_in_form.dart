@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:job_app/src/components/styles/constants/sizes.dart';
 import 'package:job_app/src/components/styles/constants/strings_text.dart';
@@ -8,15 +7,17 @@ import 'package:job_app/src/controllers/signin_controller.dart';
 import 'package:job_app/src/utils/validators/form_validation.dart';
 
 class SignInForm extends StatelessWidget {
-  const SignInForm({
+  SignInForm({
     super.key,
   });
+
+  final signinFormKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(SigninController());
     return Form(
-        key: controller.signinFormKey,
+        key: signinFormKey,
         child: Padding(
           padding:
               const EdgeInsets.symmetric(vertical: JSizes.spaceBtwSections),
@@ -60,18 +61,18 @@ class SignInForm extends StatelessWidget {
 
               // remember me & forget password
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   //remember me
-                  Row(
-                    children: [
-                      Obx(() => Checkbox(
-                          value: controller.remember.value,
-                          onChanged: (value) => controller.remember.value =
-                              !controller.remember.value)),
-                      const Text(JTexts.rememberMe),
-                    ],
-                  ),
+                  // Row(
+                  //   children: [
+                  //     Obx(() => Checkbox(
+                  //         value: controller.remember.value,
+                  //         onChanged: (value) => controller.remember.value =
+                  //             !controller.remember.value)),
+                  //     const Text(JTexts.rememberMe),
+                  //   ],
+                  // ),
                   //forget password
                   TextButton(
                       onPressed: () => Get.toNamed('forget-password'),
@@ -85,7 +86,7 @@ class SignInForm extends StatelessWidget {
               SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                      onPressed: () => controller.signin(),
+                      onPressed: () => controller.signin(signinFormKey),
                       child: const Text(JTexts.signIn))),
               const SizedBox(
                 height: JSizes.spaceBtwItems,

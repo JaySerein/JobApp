@@ -1,6 +1,4 @@
 import 'package:get/get.dart';
-import 'package:job_app/src/layouts/private/company/navigation_company.dart';
-import 'package:job_app/src/layouts/private/user/navigation.dart';
 import 'package:job_app/src/layouts/public/password_config/forget_password.dart';
 import 'package:job_app/src/layouts/public/password_config/reset_password.dart';
 import 'package:job_app/src/layouts/public/sign_in/sign_in.dart';
@@ -36,14 +34,14 @@ class JRoutes {
       page: () => const ResetPassword(),
     ),
     //user-route
-    GetPage(
-      name: '/user-page',
-      page: () => const NavigationMenu(),
-    ),
+    // GetPage(
+    //   name: '/app',
+    //   page: () => const NavigationMenu(),
+    // ),
     //company-route
-    GetPage(
-      name: '/company-page',
-      page: () => const NavigationMenuCompany(),
-    ),
+    // GetPage(
+    //   name: '/company-page',
+    //   page: () => const NavigationMenuCompany(),
+    // ),
   ];
 }

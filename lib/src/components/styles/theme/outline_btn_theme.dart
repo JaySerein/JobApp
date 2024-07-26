@@ -13,7 +13,10 @@ class JOutlinedButtonTheme {
       foregroundColor: JColors.dark,
       side: const BorderSide(color: JColors.borderPrimary),
       textStyle: const TextStyle(
-          fontSize: 16, color: JColors.black, fontWeight: FontWeight.w600),
+          fontFamily: 'Overpass',
+          fontSize: 16,
+          color: JColors.black,
+          fontWeight: FontWeight.w600),
       padding: const EdgeInsets.symmetric(
           vertical: JSizes.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(
@@ -26,8 +29,11 @@ class JOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       foregroundColor: JColors.light,
       side: const BorderSide(color: JColors.borderPrimary),
-      textStyle: const TextStyle(
-          fontSize: 16, color: JColors.textWhite, fontWeight: FontWeight.w600),
+      textStyle: const TextStyle().copyWith(
+          fontFamily: 'Overpass',
+          fontSize: 16,
+          color: JColors.textWhite,
+          fontWeight: FontWeight.w600),
       padding: const EdgeInsets.symmetric(
           vertical: JSizes.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(

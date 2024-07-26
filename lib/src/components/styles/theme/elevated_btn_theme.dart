@@ -16,7 +16,10 @@ class JElevatedButtonTheme {
       side: const BorderSide(color: JColors.primary),
       padding: const EdgeInsets.symmetric(vertical: JSizes.buttonHeight),
       textStyle: const TextStyle(
-          fontSize: 16, color: JColors.textWhite, fontWeight: FontWeight.w600),
+          fontFamily: 'Overpass',
+          fontSize: 16,
+          color: JColors.textWhite,
+          fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(JSizes.buttonRadius)),
     ),
@@ -33,7 +36,10 @@ class JElevatedButtonTheme {
       side: const BorderSide(color: JColors.primary),
       padding: const EdgeInsets.symmetric(vertical: JSizes.buttonHeight),
       textStyle: const TextStyle(
-          fontSize: 16, color: JColors.textWhite, fontWeight: FontWeight.w600),
+          fontFamily: 'Overpass',
+          fontSize: 16,
+          color: JColors.textWhite,
+          fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(JSizes.buttonRadius)),
     ),

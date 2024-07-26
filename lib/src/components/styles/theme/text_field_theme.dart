@@ -7,9 +7,8 @@ class JTextFormFieldTheme {
 
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: JColors.darkGrey,
-    suffixIconColor: JColors.darkGrey,
-    // constraints: const BoxConstraints.expand(height: JSizes.inputFieldHeight),
+    prefixIconColor: JColors.primary,
+    suffixIconColor: JColors.primary,
     labelStyle: const TextStyle()
         .copyWith(fontSize: JSizes.fontSizeMd, color: JColors.black),
     hintStyle: const TextStyle()

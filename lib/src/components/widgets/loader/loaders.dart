@@ -39,7 +39,7 @@ class JLoader {
         duration: const Duration(seconds: 3),
         margin: const EdgeInsets.all(20),
         icon: const Icon(
-          Iconsax.warning_2,
+          Iconsax.notification_bing,
           color: JColors.white,
         ));
   }
